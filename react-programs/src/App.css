@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #181717;
+}
+
+.navbar {
+  background: #5e5bb4;
+  color: rgb(31, 30, 30);
+  padding: 18px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 3px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background: #798bf6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.home {
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 40px;
+}
+
+.home-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.home-cards div {
+  background: white;
+  padding: 30px;
+  width: 250px;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 5px 20px #0002;
+}
+
+.home-cards div:hover {
+  transform: translateY(-5px);
+}
+
+.examples {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.example {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 22px;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.example:hover {
+  background: #eef1ff;
+}
+
+.example span {
+  float: right;
+}
+
+.output-page {
+  max-width: 800px;
+  margin: auto;
+}
+
+.back {
+  background: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.output {
+  background: white;
+  padding: 35px;
+  margin-top: 20px;
+  border-radius: 15px;
+  min-height: 250px;
+  box-shadow: 0 5px 20px #0002;
+}
+
+.box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.primary {
+  background: #7686e5;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  padding: 11px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+label input {
+  display: inline;
+  width: auto;
+  margin-right: 8px;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .examples {
+    grid-template-columns: 1fr;
+  }
+
+  .home h1 {
+    font-size: 30px;
+  }
+}
